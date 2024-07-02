@@ -1,0 +1,53 @@
+Bundesamt für Meteorologie und Klimatologie, MeteoSchweiz
+Operation Center 1
+Postfach 257
+8058 Zürich-Flughafen
+
+stn yyyyMMddHHmm
+
+stn Stationskürzel
+y   Jahr
+M   Monat
+d   Tag
+H   Stunde
+m   Minute
+
+Zeitangaben in UTC: 00:40 UTC = 02:40 Sommerzeit
+                              = 01:40 Winterzeit
+
+Zeitbezug bei Stundenwerten, sofern in der Parameterbeschreibung nicht anders vermerkt: HH  = (HH-1):01 - HH:00
+Beispiel: 13 = beinhaltet Messperiode von 12:01 bis 13:00 
+
+Fehlende Messwerte sind gekenntzeichnet mit '-'
+
+Qualitätsinformationen: Die Legende zu den Qualitätsinformationen ist zu finden unter: https://gate.meteoswiss.ch/idaweb/text/datenqualitaet_legende_de.pdf
+
+ 
+
+
+
+
+Stationen
+---------
+stn       Name                                 Parameter        Datenquelle                                        Länge/Breite             Koordinaten [km] Höhe ü. M. [m]
+THU       Thun                                 uto200s0         MeteoSchweiz                                       7°35'/46°45'             611200/177640    570
+THU       Thun                                 gre000z0         MeteoSchweiz                                       7°35'/46°45'             611200/177640    570
+THU       Thun                                 tre200s0         MeteoSchweiz                                       7°35'/46°45'             611200/177640    570
+THU       Thun                                 ure200s0         MeteoSchweiz                                       7°35'/46°45'             611200/177640    570
+THU       Thun                                 fkl010z0         MeteoSchweiz                                       7°35'/46°45'             611200/177640    570
+THU       Thun                                 fve010z0         MeteoSchweiz                                       7°35'/46°45'             611200/177640    570
+THU       Thun                                 rre003d0         MeteoSchweiz                                       7°35'/46°45'             611200/177640    570
+THU       Thun                                 rre005d0         MeteoSchweiz                                       7°35'/46°45'             611200/177640    570
+
+Parameter
+---------
+          Einheit                              Beschreibung
+uto200s0  g/m³                                 Absolute Luftfeuchtigkeit 2 m über Boden; Momentanwert
+gre000z0  W/m²                                 Globalstrahlung; Zehnminutenmittel
+tre200s0  °C                                   Lufttemperatur 2 m über Boden; Momentanwert
+ure200s0  %                                    Relative Luftfeuchtigkeit 2 m über Boden; Momentanwert
+fkl010z0  m/s                                  Windgeschwindigkeit skalar; Zehnminutenmittel
+fve010z0  m/s                                  Windgeschwindigkeit vektoriell; Zehnminutenmittel
+rre003d0  mm                                   Niederschlag; 3-Tagessumme 6 UTC FT - 72 h
+rre005d0  mm                                   Niederschlag; 5-Tagessumme 6 UTC FT - 120 h
+

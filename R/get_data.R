@@ -28,7 +28,7 @@ tables <- bind_rows(data_current) |> #binding since better this way, tidy
 
 n_distinct(tables$Code_grafana)
 
-meta <- as.tibble(read_delim('../Documents/Trainee/data/Messnetz_Thun_Steffisburg_Uebersicht.csv', delim = ';'))
+meta <- as.tibble(read_delim('../Trainee/data/Messnetz_Thun_Steffisburg_Uebersicht.csv', delim = ';'))
 
 result <- inner_join(tables,meta, by = "Code_grafana",relationship = "many-to-many") |> #many to many since several code grafanas per entry sometimes
   mutate(time = round_date(time, unit = "10 minutes")) |> # round to 10minutes interval

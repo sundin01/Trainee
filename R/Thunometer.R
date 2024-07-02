@@ -19,7 +19,7 @@ load_packages(packages)
 # Get the data from abilium
 #-------------------------------------------------------------------------------
 
-source('../Documents/Trainee/R/get_data.R')
+source('../Trainee/R/get_data.R')
 
 #-------------------------------------------------------------------------------
 # Make a map
